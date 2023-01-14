@@ -6,7 +6,9 @@ describe Marten::Template::Filter do
       Marten::Template::Filter.get("capitalize").should be_a Marten::Template::Filter::Capitalize
       Marten::Template::Filter.get("default").should be_a Marten::Template::Filter::Default
       Marten::Template::Filter.get("downcase").should be_a Marten::Template::Filter::DownCase
+      Marten::Template::Filter.get("join").should be_a Marten::Template::Filter::Join
       Marten::Template::Filter.get("safe").should be_a Marten::Template::Filter::Safe
+      Marten::Template::Filter.get("split").should be_a Marten::Template::Filter::Split
       Marten::Template::Filter.get("upcase").should be_a Marten::Template::Filter::UpCase
     end
 
